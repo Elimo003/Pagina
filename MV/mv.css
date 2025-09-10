@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    background-color: rgba(104,172,223,254);
+    
+
+}
+
+.Logo{
+    width: auto;
+    height: 100%;
+}
+
+.Barra_nav{
+    background-color: rgba(104,172,223,254);
+    width: 100%;
+    height: 20%;
+}
+
+.izquierda{
+    gap: 3rem;
+    width: auto;
+    left: 0;
+    justify-content:left ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.derecha{
+    display: flex;
+    gap: 3rem;
+    width: auto;
+    right: 0;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    text-decoration: none;
+    font: bold;
+    color: aliceblue;
+}
+
+button{
+    height: 20%;
+    background: transparent;
+    border: none;
+    border-radius: 10%;
+}
+
+button:hover{
+    border-radius: 10%;
+    transition: all 0.2s;
+    background: rgba(126,129,210,254);
+    
+}
+
+.space{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+.MVV{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr; /* En móvil: una columna */
+    gap: 20px;
+}
+.Mision{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(238, 5, 94, 0.322);
+   
+
+   
+}
+.Mision:hover{
+    color: rgba(91, 139, 139, 0.986);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transform: translateY(-5px);
+    
+}
+   
+
+.Vision{
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(243, 29, 29, 0.2);
+    
+ 
+}
+.Vision:hover{
+    padding: 20px;
+    margin-bottom: 10px;
+    color: rgb(97, 37, 209);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(243, 29, 29, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transform: translateY(-5px);
+}
+
+
+.VC{
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(243, 29, 29, 0.2);
+
+}
+
+.VC:hover{
+    padding: 20px;
+    margin-bottom: 10px;
+    color: rgb(128, 125, 131);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transform: translateY(-5px);
+    
+}
+
+/* ---- ajuste de pantalla ---- */
+@media (min-width: 768px) {
+    .MVV {
+        grid-template-columns: repeat(3, 1fr); /*en pc: 3 columnas*/
+    }
+}

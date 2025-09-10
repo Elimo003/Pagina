@@ -1,22 +1,69 @@
-<div class="MVV">
-    <div class="Mision">
-        <h1>Mision</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil maxime tempore voluptatum eum et fugit
-            quam! Similique animi nostrum iusto veritatis ab, voluptatibus magni minima error quos eaque mollitia
-            ullam?</p>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mision_vision</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="nav/navbar.css">
+    <link rel="stylesheet" href="mv.css">
 
-    <div class="Vision">
+</head>
+<body>
+    <div id="navbar"></div>
+    <div class="MVV">
+        <section class="Mision">
+            <h1>Misión</h1>
+            <p>En Exoire trabajamos para facilitar el acceso de emprendedores y empresas a oportunidades de comercio internacional, ofreciendo soluciones simples y seguras de importación y exportación. Nuestro compromiso es acompañar el crecimiento de nuestros clientes, construyendo relaciones de confianza y aportando valor en cada proceso, mientras fortalecemos nuestra experiencia para servir mejor cada día.</p>
+        </section>
+
+    <section class="Vision">
         <h1>Vision</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure natus quidem rerum dolore
-            asperiores, nisi voluptatum accusamus impedit sint iusto eveniet deleniti placeat obcaecati dolorum
-            beatae, labore corporis! Blanditiis!</p>
-    </div>
+        <p>Ser una empresa reconocida en el comercio internacional por nuestra transparencia, innovación y compromiso con los clientes, convirtiéndonos en un aliado estratégico para quienes buscan expandir sus negocios en los mercados globale</p>
+    </section>
 
-    <div class="VC">
+    <section class="VC">
         <h1>Valores corporativos</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure natus quidem rerum dolore
-            asperiores, nisi voluptatum accusamus impedit sint iusto eveniet deleniti placeat obcaecati dolorum
-            beatae, labore corporis! Blanditiis!</p>
-    </div>
+        <p>Transparencia: Actuamos con honestidad y claridad en cada operación.
+
+Compromiso: Cumplimos lo que prometemos y acompañamos a nuestros clientes en cada paso del proceso.
+
+Responsabilidad: Asumimos con seriedad nuestras acciones, cuidando el impacto económico, social y ambiental de nuestras operaciones.
+
+Innovación: Buscamos soluciones creativas y eficientes para facilitar el comercio nacional e internacional y mejorar continuamente nuestros servicios.
+</p>
+    </section>
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("./Nav/navbar.html")
+            .then(response => {
+            if (!response.ok) throw new Error("No se puede cargar navbar: " + response.status);
+            return response.text();
+            })
+            .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+            })
+            .catch(err => {
+            console.error(err);
+            document.getElementById("navbar").innerHTML = "<p>No se pudo cargar la barra.</p>";
+            });
+        });
+    </script>
+</body>
+</html>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
